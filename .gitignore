@@ -16,6 +16,7 @@ target/
 *.ipr
 
 ### NetBeans ###
+boot.log
 nbproject/private/
 build/
 nbbuild/
