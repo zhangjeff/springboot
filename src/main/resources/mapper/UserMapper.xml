@@ -2,8 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper  namespace="com.xwolf.boot.dao.IUserDao" >
-     <resultMap id="baseResultMap" type="com.xwolf.boot.entity.User" >
+<mapper  namespace="com.jeff.boot.dao.IUserDao" >
+     <resultMap id="baseResultMap" type="com.jeff.boot.entity.User" >
          <id column="uid" jdbcType="INTEGER" property="uid"/>
          <result column="uname" property="uname" jdbcType="VARCHAR"/>
          <result column="birth" property="birth" jdbcType="TIMESTAMP"/>
@@ -12,7 +12,7 @@
     <sql id="Base_Column">
                   uid,uname,birth
     </sql>
-    <insert id="insert" parameterType="com.xwolf.boot.entity.User" >
+    <insert id="insert" parameterType="com.jeff.boot.entity.User" >
         INSERT INTO user (uid, uname,birth)
         VALUES (#{uid,jdbcType=INTEGER},  #{uname,jdbcType=VARCHAR},#{birth,jdbcType=TIMESTAMP})
     </insert>

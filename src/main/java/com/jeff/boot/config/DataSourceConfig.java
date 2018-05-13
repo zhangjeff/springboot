@@ -1,4 +1,4 @@
-package com.xwolf.boot.config;
+package com.jeff.boot.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
@@ -23,7 +23,7 @@ import java.util.Map;
 
 /**
  * 数据源
- * @author xwolf
+ * @author jeff
  * @date 2017-02-25 08:14
  * @since 1.8
  * @version 1.0.0

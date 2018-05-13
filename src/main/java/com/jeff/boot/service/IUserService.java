@@ -1,11 +1,11 @@
-package com.xwolf.boot.service;
+package com.jeff.boot.service;
 
-import com.xwolf.boot.entity.User;
+import com.jeff.boot.entity.User;
 
 import java.util.List;
 
 /**
- * @author xwolf
+ * @author jeff
  * @date 2017-02-25 09:16
  * @since 1.8
  * @version 1.0.0

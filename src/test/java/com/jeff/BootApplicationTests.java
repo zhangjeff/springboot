@@ -1,4 +1,4 @@
-package com.xwolf;
+package com.jeff;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

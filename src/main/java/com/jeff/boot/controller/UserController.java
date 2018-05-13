@@ -1,21 +1,18 @@
-package com.xwolf.boot.controller;
+package com.jeff.boot.controller;
 
 import com.github.pagehelper.PageHelper;
-import com.xwolf.boot.entity.User;
-import com.xwolf.boot.service.IUserService;
+import com.jeff.boot.entity.User;
+import com.jeff.boot.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Logger;
 
 /**
  *
- * @author xwolf
+ * @author jeff
  * @date 2017-02-25 09:20
  * @since 1.8
  * @version 1.0.0

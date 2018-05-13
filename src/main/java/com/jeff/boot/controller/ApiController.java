@@ -1,7 +1,7 @@
-package com.xwolf.boot.controller;
+package com.jeff.boot.controller;
 
 import com.google.common.collect.Maps;
-import com.xwolf.boot.entity.User;
+import com.jeff.boot.entity.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
@@ -12,7 +12,7 @@ import java.util.*;
 
 /**
  * Swagger API测试Controller,无明确时限,以Map代替CRUD
- * @author xwolf
+ * @author jeff
  * @date 2017-02-26 20:15
  * @since 1.8
  * @version 1.0.0

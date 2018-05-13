@@ -1,4 +1,4 @@
-package com.xwolf.boot.config;
+package com.jeff.boot.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * swagger 整合管理API接口
  * 参考<url href="http://www.jianshu.com/p/8033ef83a8ed">http://www.jianshu.com/p/8033ef83a8ed</url>
  * </p>
- * @author xwolf
+ * @author jeff
  * @date 2017-02-26 20:12
  * @since 1.8
  * @version 1.0.0
@@ -28,7 +28,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.xwolf.boot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.jeff.boot.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

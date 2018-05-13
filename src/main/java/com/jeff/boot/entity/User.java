@@ -1,7 +1,7 @@
-package com.xwolf.boot.entity;
+package com.jeff.boot.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.xwolf.boot.config.Constants;
+import com.jeff.boot.config.Constants;
 import lombok.Data;
 import lombok.ToString;
 import org.hibernate.validator.constraints.Length;
@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  * 用户
- * @author xwolf
+ * @author jeff
  * @date 2017-02-25 09:00
  * @since 1.8
  * @version 1.0.0

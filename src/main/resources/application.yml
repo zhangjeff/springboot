@@ -16,7 +16,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.xwolf.boot.entity
+  type-aliases-package: com.jeffboot.entity
   check-config-location: true
   config-location: classpath:mybatis.xml
 

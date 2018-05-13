@@ -1,8 +1,8 @@
-package com.xwolf.boot.config;
+package com.jeff.boot.config;
 
 /**
  * 常量
- * @author xwolf
+ * @author jeff
  * @since 1.8
  * @version 1.0.0
  **/

@@ -1,11 +1,11 @@
-package com.xwolf;
+package com.jeff;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.xwolf.boot.dao")
+@MapperScan("com.jeff.boot.dao")
 public class BootApplication {
 
 	public static void main(String[] args) {

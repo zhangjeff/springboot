@@ -1,9 +1,9 @@
-package com.xwolf.boot.service.impl;
+package com.jeff.boot.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.xwolf.boot.dao.IUserDao;
-import com.xwolf.boot.entity.User;
-import com.xwolf.boot.service.IUserService;
+import com.jeff.boot.dao.IUserDao;
+import com.jeff.boot.entity.User;
+import com.jeff.boot.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * 用户Service
- * @author xwolf
+ * @author jeff
  * @date 2017-02-25 09:17
  * @since V1.0.0
  */
