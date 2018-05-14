@@ -35,9 +35,9 @@ spring:
    profiles: dev
    datasource:
      driver-class-name: com.mysql.jdbc.Driver
-     username: root
-     url: jdbc:mysql://127.0.0.1:3306/wifi2?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&createDatabaseIfNotExist=true
-     password: root
+     username: jeff
+     url: jdbc:mysql://192.168.159.128:3306/db_user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&createDatabaseIfNotExist=true
+     password: jeff
      type:  com.alibaba.druid.pool.DruidDataSource
      druid:
        filters: config
@@ -58,9 +58,9 @@ spring:
    profiles: test
    datasource:
      driver-class-name: com.mysql.jdbc.Driver
-     username: eop
-     url: jdbc:mysql://127.0.0.1:3306/wifi2?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&createDatabaseIfNotExist=true
-     password: eop@eop
+     username: jeff
+     url: jdbc:mysql://192.168.159.128:3306/db_user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&createDatabaseIfNotExist=true
+     password: jeff
      type:  com.alibaba.druid.pool.DruidDataSource
      druid:
        filters: config
