@@ -50,4 +50,10 @@ public class UserServiceImpl implements IUserService {
     public List<User> getList() {
         return userDao.queryList();
     }
+
+    @Override
+    public User getUserById(String id){
+        return userDao.getUserById(id);
+    }
+
 }

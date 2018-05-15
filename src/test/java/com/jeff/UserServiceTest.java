@@ -33,4 +33,10 @@ public class UserServiceTest {
         user.setUname("zhangyuheng");
         userService.insert(user);
     }
+
+    @Test
+    public void testUserServiceById(){
+       User user = userService.getUserById("444");
+        System.out.println(user);
+    }
 }
