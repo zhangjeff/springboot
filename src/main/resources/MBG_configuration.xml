@@ -16,17 +16,17 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!--targetProject请使用绝对路径-->
-        <javaModelGenerator targetPackage="boot.entity"
-                            targetProject="D:\workspace\github\zyp\springboot\src\main\java\com\jeff">
+        <javaModelGenerator targetPackage="com.jeff.boot.entity"
+                            targetProject="D:\workspace\github\zyp\springboot\src\main\java">
             <property name="enableSubPackages" value="true"/>
          
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
-        <sqlMapGenerator targetPackage="boot.mapper"
+        <sqlMapGenerator targetPackage="mapper"
                          targetProject="D:\workspace\github\zyp\springboot\src\main\resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
-        <javaClientGenerator type="XMLMAPPER" targetPackage="boot.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jeff.boot.dao"
                              targetProject="D:\workspace\github\zyp\springboot\src\main\java">
          
             <property name="enableSubPackages" value="true"/>
