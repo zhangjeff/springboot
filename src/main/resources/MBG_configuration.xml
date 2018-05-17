@@ -22,11 +22,11 @@
          
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
-        <sqlMapGenerator targetPackage="mapper"
+        <sqlMapGenerator targetPackage="sqlmapper"
                          targetProject="D:\workspace\github\zyp\springboot\src\main\resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jeff.boot.dao"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jeff.boot.mapper"
                              targetProject="D:\workspace\github\zyp\springboot\src\main\java">
          
             <property name="enableSubPackages" value="true"/>

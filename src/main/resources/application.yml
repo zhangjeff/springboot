@@ -15,7 +15,7 @@ spring:
     joda-date-time-format: YYYY-MM-DD HH:mm:ss
 
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:sqlmapper/*.xml
   type-aliases-package: com.jeff.boot.entity
   check-config-location: true
   config-location: classpath:mybatis.xml

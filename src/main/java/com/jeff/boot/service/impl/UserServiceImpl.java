@@ -3,7 +3,7 @@ package com.jeff.boot.service.impl;
 import com.alibaba.fastjson.JSONObject;
 import com.jeff.boot.entity.User;
 import com.jeff.boot.entity.UserExample;
-import com.jeff.boot.dao.UserMapper;
+import com.jeff.boot.mapper.UserMapper;
 import com.jeff.boot.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

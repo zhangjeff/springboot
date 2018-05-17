@@ -1,4 +1,4 @@
-package com.jeff.boot.dao;
+package com.jeff.boot.mapper;
 
 import com.jeff.boot.entity.User;
 import com.jeff.boot.entity.UserExample;
