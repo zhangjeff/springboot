@@ -8,6 +8,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,12 +31,17 @@ public class ApiController {
     @Autowired
     private IUserService userService;
 
+    @Autowired
+    private RedisTemplate<String, String> template;
+
     private static Map<Integer, User> users = Maps.newConcurrentMap();
 
     @ApiOperation(value="获取用户列表", notes="")
     @GetMapping(value={"/list"})
     public List<User> getUserList() {
         List<User> r = userService.getList();
+        template.opsForValue().set("userList", "222");
+        System.out.println("------------------------------" + template.opsForValue().get("userList"));
 //        List<User> r = new ArrayList<User>(users.values());
 //
 //        User user = new User();
