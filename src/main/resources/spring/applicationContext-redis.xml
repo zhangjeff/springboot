@@ -8,5 +8,37 @@
     <!--<bean id="jedisConnFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" p:usePool="true"/>-->
     <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" p:hostName="127.0.0.1"
           p:port="6379"/>
-    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate" p:connectionFactory-ref="jedisConnectionFactory"/>
+    <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate" p:connectionFactory-ref="jedisConnectionFactory">
+        <property name="defaultSerializer">
+            <bean class="org.springframework.data.redis.serializer.StringRedisSerializer"/>
+        </property>
+    </bean>
+
+    <bean id="redisMessageListener" class="com.jeff.boot.message.TopicMessageListener">
+        <property name="redisTemplate" ref="redisTemplate"/>
+    </bean>
+
+    <bean id="redisContainer" class="org.springframework.data.redis.listener.RedisMessageListenerContainer">
+        <property name="connectionFactory" ref="jedisConnectionFactory" />
+        <property name="messageListeners">
+            <map>
+                <entry key-ref="redisMessageListener">
+                    <list>
+                        <!-- 普通订阅，订阅具体的频道 -->
+                        <bean class="org.springframework.data.redis.listener.ChannelTopic">
+                            <constructor-arg value="topic.channel" />
+                        </bean>
+                        <!-- 模式订阅，支持模式匹配订阅，*为模糊匹配符 -->
+                        <bean class="org.springframework.data.redis.listener.PatternTopic">
+                            <constructor-arg value="topic.*" />
+                        </bean>
+                        <!-- 匹配所有频道 -->
+                        <bean class="org.springframework.data.redis.listener.PatternTopic">
+                            <constructor-arg value="*" />
+                        </bean>
+                    </list>
+                </entry>
+            </map>
+        </property>
+    </bean>
 </beans>
