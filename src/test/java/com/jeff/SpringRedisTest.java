@@ -16,14 +16,16 @@ import org.springframework.test.context.web.WebAppConfiguration;
 public class SpringRedisTest {
 
     @Autowired
-    private RedisTemplate<String, String> template;
+    private RedisTemplate<String, String> redisTemplate;
 
     @Test
     public void testFirst() {
+
+        redisTemplate.convertAndSend("topic.channel", "hello world!2222");
         // set username wlwlwlwl015
-        template.opsForValue().set("username", "wlwlwlwl015");
+        redisTemplate.opsForValue().set("username", "wlwlwlwl015");
 //        // get username
-        System.out.println(template.opsForValue().get("username"));
+        System.out.println(redisTemplate.opsForValue().get("username"));
     }
 
 }
