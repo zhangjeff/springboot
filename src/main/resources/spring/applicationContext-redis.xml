@@ -6,7 +6,7 @@
 
     <!--<context:component-scan base-package=""/>-->
     <!--<bean id="jedisConnFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" p:usePool="true"/>-->
-    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" p:hostName="127.0.0.1"
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory" p:hostName="192.168.226.239"
           p:port="6379"/>
     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate" p:connectionFactory-ref="jedisConnectionFactory">
         <property name="defaultSerializer">
