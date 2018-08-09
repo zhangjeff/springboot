@@ -15,7 +15,6 @@
     </bean>
 
     <bean id="redisMessageListener" class="com.jeff.boot.message.TopicMessageListener">
-        <property name="redisTemplate" ref="redisTemplate"/>
     </bean>
 
     <!--<bean id="redisContainer" class="org.springframework.data.redis.listener.RedisMessageListenerContainer">-->

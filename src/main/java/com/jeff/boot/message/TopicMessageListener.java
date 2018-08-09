@@ -4,17 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.Message;
 import org.springframework.data.redis.connection.MessageListener;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
 
 /**
  * @author Youpeng.Zhang on 2018/8/9.
  */
+@Service
 public class TopicMessageListener implements MessageListener {
-//    @Autowired
+    @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
-    public void setRedisTemplate(RedisTemplate<String, String> redisTemplate) {
-        this.redisTemplate = redisTemplate;
-    }
 
     @Override
     public void onMessage(Message message, byte[] bytes) {
