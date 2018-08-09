@@ -35,9 +35,9 @@ spring:
    profiles: dev
    datasource:
      driver-class-name: com.mysql.jdbc.Driver
-     username: jeff
-     url: jdbc:mysql://192.168.159.128:3306/db_user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&createDatabaseIfNotExist=true
-     password: jeff
+     username: wwy
+     url: jdbc:mysql://118.184.77.38:3306/db_user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&createDatabaseIfNotExist=true
+     password: wwy123
      type:  com.alibaba.druid.pool.DruidDataSource
      druid:
        filters: config
